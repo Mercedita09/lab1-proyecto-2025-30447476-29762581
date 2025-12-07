@@ -18,7 +18,4 @@ class PersonaAtendida(Base):
     direccion = Column(String(255))
     contactoEmergencia = Column(String(255))
     estado = Column(Enum('activo', 'inactivo'), default='activo')
-    
-    # Opcionales (pueden ser otra tabla de 1:N o un campo JSON en MySQL)
-    # alergias = Column(ARRAY(String)) 
-    # antecedentesResumen = Column(String)
+ 
